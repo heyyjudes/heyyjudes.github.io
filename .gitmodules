@@ -1,0 +1,3 @@
+[submodule "projects/online-dating-2048"]
+	path = projects/online-dating-2048
+	url = git@github.com:heyyjudes/online-dating-2048.git
