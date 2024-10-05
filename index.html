@@ -33,6 +33,7 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <meta name="google-site-verification" content="Em7d_jUmsePUsyc9QdlH4GNvXw_b4v0RmOfV8sgW7Us" />
+      
   </head>
   <body>
     <div id="all">
@@ -58,31 +59,96 @@
             </div>
           </div>
         <!--   *** SIDEBAR END ***  -->
-          <!--   *** DETAIL ***-->
-          <div class="col-xs-12 col-sm-10 col-md-10 content-column white-background">
-            <div class="small-navbar visible-xs">
-              <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-            </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 content-column white-background">
+          <div class="small-navbar visible-xs">
+            <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+          </div>
+          <div class="row">
+              <div class="content-column-content">
+              <h1 class="sidebar-heading a">Judy Hanwen Shen</h1>
+              <div class="bio-container">
+                <div class="headshot">
+                  <img src="img/fun_headshot.jpg" alt="Judy Hanwen Shen" class="img-responsive">
+                </div>
+                <div class="bio">
+                  <p class="b">I am a PhD student in the <a href="https://theory.stanford.edu/main/index.shtml">Theory Group</a> in the Computer Science Department at Stanford University. I am fortunate to be advised by <a href="https://omereingold.wordpress.com/">Omer Reingold</a>. I work towards trustworthy machine learning through understanding data.</p>
 
-        <div class="row">
-            
-        <div class="content-column-content">
-        <h1 class="sidebar-heading b">Judy Hanwen Shen</h1>
-          <p><img src="img/fun_headshot.jpg" width="250"></p>
-        
-            <p class="b">I am a PhD student in the <a href="https://theory.stanford.edu/main/index.shtml">Theory Group</a> in the Computer Science Department at Stanford University. I am fortunate to be advised by <a href="https://omereingold.wordpress.com/">Omer Reingold</a>. I am broadly interested in algorithmic fairness, differential privacy, and responsible computing.</p> 
-           
-            <p class="b">
-            Previously, I was an <a href="https://www.microsoft.com/en-us/research/academic-program/microsoft-ai-residency-program/">AI Resident</a> at Microsoft Research in Redmond, USA. I received my S.M. in the <a href="https://affect.media.mit.edu/">Affective Computing</a> group at the <a href="https://www.media.mit.edu/">MIT Media Lab</a>, advised by <a href="http://web.media.mit.edu/~picard/"> Rosalind Picard</a>. I completed my undergradate degree in Engineering Science (B.A.Sc.) at the University of Toronto (iron ring has only been lost once). I have previously interned at Deepmind and Intel.</p>
-            
-            <p class="b"> I am an advocate for PhD student well-being. I led the most recent <a href="files/2021_Stanford_CS_PhD_Student_Climate_Survey.pdf">PhD Climate Survey</a> in the Stanford Computer Science Department. I also write about various aspects of gradute student life in my <a href="https://convexoptimist.substack.com/">blog</a>. My non-research aspirations include qualifying for the Boston Marathon, learning to play the cello, and cultivating my own supply of fresh kale.</p>
-            
-            <p class="b">email: jhshen [at] stanford [dot] edu</p>
-        </div>
-        </div>
+<!--                  <p class="b">Previously, I was an <a href="https://www.microsoft.com/en-us/research/academic-program/microsoft-ai-residency-program/">AI Resident</a> at Microsoft Research in Redmond, USA. I received my S.M. in the <a href="https://affect.media.mit.edu/">Affective Computing</a> group at the <a href="https://www.media.mit.edu/">MIT Media Lab</a>, advised by <a href="http://web.media.mit.edu/~picard/"> Rosalind Picard</a>. I completed my undergraduate degree in Engineering Science (B.A.Sc.) at the University of Toronto (iron ring has only been lost once). I have previously interned at Deepmind and Intel.</p>-->
+
+                  <p class="b">I am an advocate for PhD student well-being. I led the most recent <a href="files/2021_Stanford_CS_PhD_Student_Climate_Survey.pdf">PhD Climate Survey</a> in the Stanford Computer Science Department. I also write about various aspects of graduate student life in my <a href="https://convexoptimist.substack.com/">blog</a>. My non-research aspirations include qualifying for the Boston Marathon, learning to play the cello, and cultivating my own supply of fresh kale.</p>
+
+                  <p class="b">email: jhshen [at] stanford [dot] edu</p>
+                </div>
+              </div>
+                  
+              <!-- Section separator -->
+              <div class="section-separator"></div>
+                  
+              <h2 class="sidebar-heading a">Recent Work</h2>
+              <div class="recent-work">
+                <!-- Paper 1 -->
+                <div class="paper-container">
+                  <div class="paper-image">
+                    <img src="img/data-addition.png" alt="Paper 1 Image" class="img-responsive">
+                  </div>
+                  <div class="paper-details">
+                    <h3 class="paper-title">The Data Addition Dilemma</h3>
+                    <p>JH Shen, Inioluwa Deborah Raji, Irene Y. Chen <br> Machine Learning For Health Care 2024 (MLHC)
+                    <br> <em>Adding data is not always better, we formalize a practical data accumulation model to explain why. </em></p>
+                    <a href="https://www.arxiv.org/abs/2408.04154" class="btn btn-primary">Paper</a>
+                      <a href="https://github.com/the-chen-lab/data-addition-dilemma" class="btn btn-primary">Code</a>
+                  </div>
+                </div>
+                  <!-- Paper 2 -->
+                <div class="paper-container">
+                  <div class="paper-image">
+                    <img src="img/multi-group-robustness.png" alt="Paper 1 Image" class="img-responsive">
+                  </div>
+                  <div class="paper-details">
+                    <h3 class="paper-title">Multigroup Robustness</h3>
+                    <p>with Lunja Hu and Charlotte Peale (&alpha;&beta;) <br> International Conference on Machine Learning 2024 (ICML) 
+                    <br> <em>When data comes from different sources, robustness guarantees for subgroups should depend on how much corruption occurs within that subgroup. </em></p>
+                    <a href="https://arxiv.org/abs/2405.00614" class="btn btn-primary">Paper</a>
+                      <a href="https://github.com/heyyjudes/multigroup-robust" class="btn btn-primary">Code</a>
+                  </div>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="paper-container">
+                  <div class="paper-image">
+                    <img src="img/resized_LM_Overview.png" alt="Paper 2 Image" class="img-responsive">
+                  </div>
+                  <div class="paper-details">
+                    <h3 class="paper-title">Unifying Corroborative and Contributive Attributions in Large Language Models</h3>
+                    <p>Teddi Worledge*, JH Shen*, Nicole Meister, Caleb Winston, Carlos Guestrin 
+                    <br>IEEE Conference on Secure and Trustworthy Machine Learning 2024 (SaTML) 
+                    <br> <em>Modern LLM applications require both factuality and training data attributions, we introduce a unified model for both.</em></p>
+                    <a href="https://arxiv.org/abs/2311.12233" class="btn btn-primary">Paper</a>
+                  </div>
+                </div>
+                  
+                <!-- Paper 4 -->
+                <div class="paper-container">
+                  <div class="paper-image">
+                    <img src="img/Dissenting_Explanations.png" alt="Paper 2 Image" class="img-responsive">
+                  </div>
+                  <div class="paper-details">
+                    <h3 class="paper-title">Dissenting Explanations: Leveraging Disagreement to Reduce Model Overreliance</h3>
+                    <p>with Omer Reingold and Aditi Talati (&alpha;&beta;)
+                    <br>AAAI Conference on Artificial Intelligence 2024 (AAAI)  
+                    <br> <em>When explanations can argue both for and against a model decision, humans make better decisions.</em></p>
+                    <a href="https://arxiv.org/abs/2307.07636" class="btn btn-primary">Paper</a>
+                  </div>
+                </div>
+
+        <!-- Add more paper entries as needed -->
+
+            </div>
+            </div>
           </div>
         </div>
-      </div>
+
+            
         <div align="center">
             <p class="pad">Template from Bootstrapious</p>
         </div>
