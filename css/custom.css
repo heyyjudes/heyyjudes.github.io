@@ -65,6 +65,15 @@ p.pad {
   gap: 20px;
   margin-bottom: 30px;
   align-items: flex-start; /* Aligns items to the top */
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.paper-container:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: #d4af37;
 }
 
 .paper-image {
@@ -123,4 +132,70 @@ p.pad {
 
 .recent-work {
   margin-top: 30px;
+}
+
+/* Tab styles */
+.nav-tabs {
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    border: 2px solid #f0f0f0;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    margin-right: 5px;
+    color: #666;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #f0f0f0;
+    background-color: #f8f8f8;
+    color: #d4af37;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-color: #f0f0f0;
+    border-bottom-color: #fff;
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 2px solid #f0f0f0;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    background-color: #fff;
+}
+
+/* Update button styles */
+.btn-primary {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b38f2e;
+    border-color: #b38f2e;
+    color: #fff;
+}
+
+/* Hide all Owl Carousel navigation arrows */
+.owl-controls .owl-buttons,
+.owl-controls .owl-page,
+.owl-controls .owl-pagination {
+    display: none !important;
+}
+
+/* Hide any remaining carousel controls */
+.owl-controls {
+    display: none !important;
 }

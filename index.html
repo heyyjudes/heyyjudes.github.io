@@ -17,15 +17,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
@@ -40,28 +37,35 @@
       <div class="container-fluid">
         <div class="row row-offcanvas row-offcanvas-left"> 
         <!--   *** SIDEBAR ***-->
-          <div id="sidebar" class="col-xs-6 col-sm-2 col-md-2 sidebar-offcanvas">
-            <div class="sidebar-content">
-              <ul class="sidebar-menu b"> 
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li> 
-                <li><a href="hair.html">Hair</a></li>
-                <li><a href="https://convexoptimist.substack.com/">Blog</a></li> 
-              </ul>
-              <p class="social">
-                  <a href="https://twitter.com/judyhshen" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/heyyjudes" data-animate-hover="pulse" class="external gplus"><i class="fa fa-github"></i></a>
-                  <br>
-                  <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google"></i></a>
-                  <a href="https://ca.linkedin.com/in/judyhanwenshen" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a>
-                  
-                
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="sidebar-content">
+                <ul class="sidebar-menu b"> 
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="research.html">Research</a></li> 
+                  <li><a href="hair.html">Hair</a></li>
+                  <li><a href="https://convexoptimist.substack.com/">Blog</a></li> 
+                </ul>
+                <p class="social">
+                    <a href="https://twitter.com/judyhshen" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/heyyjudes" data-animate-hover="pulse" class="external gplus"><i class="fa fa-github"></i></a>
+                    <br>
+                    <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google"></i></a>
+                    <a href="https://ca.linkedin.com/in/judyhanwenshen" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a>
+                </p>
+              </div>
             </div>
           </div>
         <!--   *** SIDEBAR END ***  -->
         <div class="col-xs-12 col-sm-10 col-md-10 content-column white-background">
           <div class="small-navbar visible-xs">
-            <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+            <button type="button" class="btn btn-ghost pull-left" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+              <i class="fa fa-align-left"></i>Menu
+            </button>
           </div>
           <div class="row">
               <div class="content-column-content">
@@ -71,7 +75,7 @@
                   <img src="img/fun_headshot.jpg" alt="Judy Hanwen Shen" class="img-responsive">
                 </div>
                 <div class="bio">
-                  <p class="b">I am a PhD student in the <a href="https://theory.stanford.edu/main/index.shtml">Theory Group</a> in the Computer Science Department at Stanford University. I am fortunate to be advised by <a href="https://omereingold.wordpress.com/">Omer Reingold</a>. I work towards trustworthy machine learning through understanding data.</p>
+                  <p class="b">I am a PhD student in the <a href="https://theory.stanford.edu/main/index.shtml">Theory Group</a> in the Computer Science Department at Stanford University. I am fortunate to be advised by <a href="https://omereingold.wordpress.com/">Omer Reingold</a>. I am currently working on human-AI collaboration and understanding the societal impacts of advanced AI.</p>
 
 <!--                  <p class="b">Previously, I was an <a href="https://www.microsoft.com/en-us/research/academic-program/microsoft-ai-residency-program/">AI Resident</a> at Microsoft Research in Redmond, USA. I received my S.M. in the <a href="https://affect.media.mit.edu/">Affective Computing</a> group at the <a href="https://www.media.mit.edu/">MIT Media Lab</a>, advised by <a href="http://web.media.mit.edu/~picard/"> Rosalind Picard</a>. I completed my undergraduate degree in Engineering Science (B.A.Sc.) at the University of Toronto (iron ring has only been lost once). I have previously interned at Deepmind and Intel.</p>-->
 
@@ -84,65 +88,266 @@
               <!-- Section separator -->
               <div class="section-separator"></div>
                   
-              <h2 class="sidebar-heading a">Recent Work</h2>
-              <div class="recent-work">
-                <!-- Paper 1 -->
-                <div class="paper-container">
-                  <div class="paper-image">
-                    <img src="img/data-addition.png" alt="Paper 1 Image" class="img-responsive">
-                  </div>
-                  <div class="paper-details">
-                    <h3 class="paper-title">The Data Addition Dilemma</h3>
-                    <p>JH Shen, Inioluwa Deborah Raji, Irene Y. Chen <br> Machine Learning For Health Care 2024 (MLHC)
-                    <br> <em>Adding data is not always better, we formalize a practical data accumulation model to explain why. </em></p>
-                    <a href="https://www.arxiv.org/abs/2408.04154" class="btn btn-primary">Paper</a>
-                      <a href="https://github.com/the-chen-lab/data-addition-dilemma" class="btn btn-primary">Code</a>
-                  </div>
-                </div>
-                  <!-- Paper 2 -->
-                <div class="paper-container">
-                  <div class="paper-image">
-                    <img src="img/multi-group-robustness.png" alt="Paper 1 Image" class="img-responsive">
-                  </div>
-                  <div class="paper-details">
-                    <h3 class="paper-title">Multigroup Robustness</h3>
-                    <p>with Lunja Hu and Charlotte Peale (&alpha;&beta;) <br> International Conference on Machine Learning 2024 (ICML) 
-                    <br> <em>When data comes from different sources, robustness guarantees for subgroups should depend on how much corruption occurs within that subgroup. </em></p>
-                    <a href="https://arxiv.org/abs/2405.00614" class="btn btn-primary">Paper</a>
-                      <a href="https://github.com/heyyjudes/multigroup-robust" class="btn btn-primary">Code</a>
-                  </div>
-                </div>
+              <h2 class="sidebar-heading a">Selected Publications</h2>
+              <p>(&alpha;&beta;) indicates author list in alphabetical order, (*) indicates equal contribution</p>
+              
+              <!-- Tab Navigation -->
+              <ul class="nav nav-tabs" id="researchTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recent" type="button" role="tab" aria-controls="recent" aria-selected="true">Recent Work</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="hai-tab" data-bs-toggle="tab" data-bs-target="#hai" type="button" role="tab" aria-controls="hai" aria-selected="false">Human-AI Collaboration</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="false">Data Quality</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fairness-tab" data-bs-toggle="tab" data-bs-target="#fairness" type="button" role="tab" aria-controls="fairness" aria-selected="false">Fairness</button>
+                  </li>
+              </ul>
 
-                <!-- Paper 3 -->
-                <div class="paper-container">
-                  <div class="paper-image">
-                    <img src="img/resized_LM_Overview.png" alt="Paper 2 Image" class="img-responsive">
-                  </div>
-                  <div class="paper-details">
-                    <h3 class="paper-title">Unifying Corroborative and Contributive Attributions in Large Language Models</h3>
-                    <p>Teddi Worledge*, JH Shen*, Nicole Meister, Caleb Winston, Carlos Guestrin 
-                    <br>IEEE Conference on Secure and Trustworthy Machine Learning 2024 (SaTML) 
-                    <br> <em>Modern LLM applications require both factuality and training data attributions, we introduce a unified model for both.</em></p>
-                    <a href="https://arxiv.org/abs/2311.12233" class="btn btn-primary">Paper</a>
-                  </div>
-                </div>
-                  
-                <!-- Paper 4 -->
-                <div class="paper-container">
-                  <div class="paper-image">
-                    <img src="img/Dissenting_Explanations.png" alt="Paper 2 Image" class="img-responsive">
-                  </div>
-                  <div class="paper-details">
-                    <h3 class="paper-title">Dissenting Explanations: Leveraging Disagreement to Reduce Model Overreliance</h3>
-                    <p>with Omer Reingold and Aditi Talati (&alpha;&beta;)
-                    <br>AAAI Conference on Artificial Intelligence 2024 (AAAI)  
-                    <br> <em>When explanations can argue both for and against a model decision, humans make better decisions.</em></p>
-                    <a href="https://arxiv.org/abs/2307.07636" class="btn btn-primary">Paper</a>
-                  </div>
-                </div>
+              <!-- Tab Content -->
+              <div class="tab-content" id="researchTabContent">
+                  <!-- Recent Work Tab -->
+                  <div class="tab-pane fade show active" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+                      <div class="recent-work">
+                          <!-- Paper 1 -->
+                          <div class="paper-container">
+                            <div class="paper-image">
+                                <img src="img/doordash_pm_1round.png" alt="Paper 1 Image" class="img-responsive">
+                            </div>
+                            <div class="paper-details">
+                                <h3 class="paper-title">Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations</h3>
+                                <p>with Lee Cohen, Jack Hsieh, Connie Hong (&alpha;&beta;)
+                                <br>International Conference on Machine Learning 2025 (ICML)  
+                                <br> <em>How can hiring decisions be fair and accurate when candidates use LLMs? </em></p>
+                                <a href="https://www.arxiv.org/abs/2502.13221" class="btn btn-primary">Paper</a>
+                                <a href="https://github.com/heyyjudes/llm-hiring-ecosystem" class="btn btn-primary">Code</a>
+                            </div>
+                        </div>
+                          <!-- Paper 2 -->
+                          <div class="paper-container">
+                              <div class="paper-image">
+                                  <img src="img/creative_tasks.png" alt="Paper 2 Image" class="img-responsive">
+                              </div>
+                              <div class="paper-details">
+                                  <h3 class="paper-title">Societal Impacts Research Requires Benchmarks for Creative Composition Tasks</h3>
+                                  <p>JH Shen and Carlos Guestrin 
+                                  <br>International Conference on Machine Learning 2025 (ICML) 
+                                  <br><span style="color: #b38f2e;">BiAlign Workshop at ICLR 2025: Best Societal Impacts Paper Award 🎉</span>  
+                                  <br> <em>Everyday creativity tasks done by AI will impact society, we need to be better measure them.</em></p>
+                                  <a href="https://arxiv.org/abs/2504.06549" class="btn btn-primary">Paper</a>
+                                  <a href="https://huggingface.co/collections/heyyjudes/creative-composition-task-prompts-6834f528a28225bffb71628d" class="btn btn-primary">Data</a>
+                              </div>
+                          </div>
+                        
+                            <!-- Paper 3 -->
+                            <div class="paper-container">
+                              <div class="paper-image">
+                                  <img src="img/stereotype-predictors-tall.png" alt="Paper 3 Image" class="img-responsive">
+                              </div>
+                              <div class="paper-details">
+                                  <h3 class="paper-title">Fairness with respect to Stereotype Predictors: Impossibilities and Best Practices</h3>
+                                  <p> with Inbal Livni Navon and Omer Reingold (&alpha;&beta;)
+                                  <br>Transactions on Machine Learning Research May 2025 (TMLR) 
+                                  <br> <em>We introduce a unified framework of "stereotype predictors" to systematically measure and mitigate representational harms in AI systems.</em></p>
+                                  <a href="https://openreview.net/forum?id=FPJKZDzdsW" class="btn btn-primary">Paper</a>
+                                  <a href="https://github.com/heyyjudes/formalizing-fairness-for-stereotypes" class="btn btn-primary">Code</a>
+                              </div>
+                          </div>
 
-        <!-- Add more paper entries as needed -->
+                          <!-- Paper 4 -->
+                          <div class="paper-container">
+                            <div class="paper-image">
+                                <img src="img/rich-info-clfNN-regNN_CR.png" alt="Paper 4 Image" class="img-responsive">
+                            </div>
+                            <div class="paper-details">
+                                <h3 class="paper-title">Algorithms with Calibrated Machine Learning Predictions</h3>
+                                <p> with Ellen Vitercik and Anders Wikum (&alpha;&beta;)
+                                <br>International Conference on Machine Learning 2025 (ICML)
+                                <br> <span style="color: #b38f2e;">ICML Spotlight 🎉 </span>
+                                <br> <em>Calibrated machine learning predictions can significantly improve online algorithms by providing more reliable uncertainty estimates, with applications to ski rental and job scheduling problems.</em></p>
+                                <a href="https://arxiv.org/abs/2502.02861" class="btn btn-primary">Paper</a>
+                                <a href="https://github.com/heyyjudes/algs-cali-pred" class="btn btn-primary">Code</a>
+                            </div>
+                        </div>
 
+                      </div>
+                  </div>
+
+                  <!-- Human-AI Collaboration Tab -->
+                  <div class="tab-pane fade" id="hai" role="tabpanel" aria-labelledby="hai-tab">
+                        <!-- Paper 1 -->
+                        <div class="paper-container">
+                          <div class="paper-image">
+                              <img src="img/doordash_pm_1round.png" alt="Paper 1 Image" class="img-responsive">
+                          </div>
+                          <div class="paper-details">
+                              <h3 class="paper-title">Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations</h3>
+                              <p>with Lee Cohen, Jack Hsieh, Connie Hong (&alpha;&beta;)
+                              <br>International Conference on Machine Learning 2025 (ICML)  
+                              <br> <em>How can hiring decisions be fair and accurate when candidates use LLMs? </em></p>
+                              <a href="https://www.arxiv.org/abs/2502.13221" class="btn btn-primary">Paper</a>
+                              <a href="https://github.com/heyyjudes/llm-hiring-ecosystem" class="btn btn-primary">Code</a>
+                          </div>
+                      </div>
+                      <!-- Paper 1: Dissenting Explanations -->
+                      <div class="paper-container">
+                          <div class="paper-image">
+                              <img src="img/Dissenting_Explanations.png" alt="Dissenting Explanations Image" class="img-responsive">
+                          </div>
+                          <div class="paper-details">
+                              <h3 class="paper-title">Dissenting Explanations: Leveraging Disagreement to Reduce Model Overreliance</h3>
+                              <p>with Omer Reingold and Aditi Talati (&alpha;&beta;)
+                              <br>AAAI Conference on Artificial Intelligence 2024 (AAAI)  
+                              <br> <em>When explanations can argue both for and against a model decision, humans make better decisions.</em></p>
+                              <a href="https://arxiv.org/abs/2307.07636" class="btn btn-primary">Paper</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Data Quality Tab -->
+                  <div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
+
+                        <!-- Paper 1 -->
+                        <div class="paper-container">
+                          <div class="paper-image">
+                              <img src="img/data-addition.png" alt="Paper 1 Image" class="img-responsive">
+                          </div>
+                          <div class="paper-details">
+                              <h3 class="paper-title">The Data Addition Dilemma</h3>
+                              <p>JH Shen, Inioluwa Deborah Raji, Irene Y. Chen <br> Machine Learning For Health Care 2024 (MLHC)
+                              <br> <em>Adding data is not always better, we formalize a practical data accumulation model to explain why. </em></p>
+                              <a href="https://www.arxiv.org/abs/2408.04154" class="btn btn-primary">Paper</a>
+                              <a href="https://github.com/the-chen-lab/data-addition-dilemma" class="btn btn-primary">Code</a>
+                          </div>
+                      </div>
+
+                      <!-- Paper 2 -->
+                      <div class="paper-container">
+                        <div class="paper-image">
+                            <img src="img/data-rlhf.png" alt="Paper 2 Image" class="img-responsive">
+                        </div>
+                        <div class="paper-details">
+                            <h3 class="paper-title">Towards Data-Centric RLHF: Simple Metrics for Preference Dataset Comparison</h3>
+                            <p>JH Shen, Archit Sharma, Jun Qin <br> Attrib Workshop @ Neurips 2024
+                            <br> <em>Adding data is still not always better, even in reward modeling. We give simple metrics to compare preference datasets. </em></p>
+                            <a href="https://arxiv.org/abs/2409.09603" class="btn btn-primary">Paper</a>
+                        </div>
+                    </div>
+
+                      <!-- Paper 2 -->
+                      <div class="paper-container">
+                          <div class="paper-image">
+                              <img src="img/multi-group-robustness.png" alt="Paper 2 Image" class="img-responsive">
+                          </div>
+                          <div class="paper-details">
+                              <h3 class="paper-title">Multigroup Robustness</h3>
+                              <p>with Lunja Hu and Charlotte Peale (&alpha;&beta;) <br> International Conference on Machine Learning 2024 (ICML) 
+                              <br> <em>When data comes from different sources, robustness guarantees for subgroups should depend on how much corruption occurs within that subgroup. </em></p>
+                              <a href="https://arxiv.org/abs/2405.00614" class="btn btn-primary">Paper</a>
+                              <a href="https://github.com/heyyjudes/multigroup-robust" class="btn btn-primary">Code</a>
+                          </div>
+                      </div>
+                      <!-- Paper 2: Unifying Corroborative and Contributive Attributions -->
+                      <div class="paper-container">
+                        <div class="paper-image">
+                            <img src="img/resized_LM_Overview.png" alt="Unifying Attributions Image" class="img-responsive">
+                        </div>
+                        <div class="paper-details">
+                            <h3 class="paper-title">Unifying Corroborative and Contributive Attributions in Large Language Models</h3>
+                            <p>Teddi Worledge*, JH Shen*, Nicole Meister, Caleb Winston, Carlos Guestrin 
+                            <br>IEEE Conference on Secure and Trustworthy Machine Learning 2024 (SaTML) 
+                            <br> <em>Modern LLM applications require both factuality and training data attributions, we introduce a unified model for both.</em></p>
+                            <a href="https://arxiv.org/abs/2311.12233" class="btn btn-primary">Paper</a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- Fairness Tab -->
+                  <div class="tab-pane fade" id="fairness" role="tabpanel" aria-labelledby="fairness-tab">
+                      <!-- Paper 3 -->
+                      <div class="paper-container">
+                        <div class="paper-image">
+                            <img src="img/stereotype-predictors-tall.png" alt="Paper 3 Image" class="img-responsive">
+                        </div>
+                        <div class="paper-details">
+                            <h3 class="paper-title">Fairness with respect to Stereotype Predictors: Impossibilities and Best Practices</h3>
+                            <p> with Inbal Livni Navon and Omer Reingold (&alpha;&beta;)
+                            <br>Transactions on Machine Learning Research May 2025 (TMLR) 
+                            <br> <em>We introduce a unified framework of "stereotype predictors" to systematically measure and mitigate representational harms in AI systems.</em></p>
+                            <a href="https://openreview.net/forum?id=FPJKZDzdsW" class="btn btn-primary">Paper</a>
+                            <a href="https://github.com/heyyjudes/formalizing-fairness-for-stereotypes" class="btn btn-primary">Code</a>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div class="paper-container">
+                      <div class="paper-image">
+                          <img src="img/creative_tasks.png" alt="Paper 2 Image" class="img-responsive">
+                      </div>
+                      <div class="paper-details">
+                          <h3 class="paper-title">Societal Impacts Research Requires Benchmarks for Creative Composition Tasks</h3>
+                          <p>JH Shen and Carlos Guestrin 
+                          <br>International Conference on Machine Learning 2025 (ICML) 
+                          <br><span style="color: #b38f2e;">BiAlign Workshop at ICLR 2025: Best Societal Impacts Paper Award 🎉</span>  
+                          <br> <em>Everyday creativity tasks done by AI will impact society, we need to be better measure them.</em></p>
+                          <a href="https://arxiv.org/abs/2504.06549" class="btn btn-primary">Paper</a>
+                          <a href="https://huggingface.co/collections/heyyjudes/creative-composition-task-prompts-6834f528a28225bffb71628d" class="btn btn-primary">Data</a>
+                      </div>
+                  </div>
+                  <!-- Paper 3 -->
+                  <div class="paper-container">
+                    <div class="paper-image">
+                        <img src="img/fair-private.png" alt="Paper 3 Image" class="img-responsive">
+                    </div>
+                    <div class="paper-details">
+                        <h3 class="paper-title">Unlocking Accuracy and Fairness in Differentially Private Image Classification</h3>
+                        <p>L. Berrada*, S. De*, <b>JH Shen*</b>, J. Hayes, R. Stanforth, D. Stutz, P. Kohli, S.L. Smith, B. Balle  
+                        <br> <em>Pre-trained foundation models fine-tuned with differential privacy can achieve accuracies comparable to non-private classifiers while maintaining fairness across demographic groups, making privacy-preserving machine learning practically viable for sensitive datasets.</em></p>
+                        <a href="https://arxiv.org/abs/2308.10888" class="btn btn-primary">Paper</a>
+                        <a href="https://montrealethics.ai/unlocking-accuracy-and-fairness-in-differentially-private-image-classification/" class="btn btn-primary">Blog Post</a>
+                    </div>
+                </div>
+                    <!-- Paper 4 -->
+                    <div class="paper-container">
+                      <div class="paper-image">
+                          <img src="img/leximax.png" alt="Paper 4 Image" class="img-responsive">
+                      </div>
+                      <div class="paper-details">
+                          <h3 class="paper-title">Leximax Approximations and Representative Cohort Selection</h3>
+                          <p> with Monika Henzinger, Charlotte Peale and Omer Reingold (&alpha;&beta;) 
+                          <p> 3rd annual Symposium on Foundations of Responsible Computing (FORC). 2022. 
+                          <br> <em>We introduce new notions of approximate leximax and give a polynomial-time algorithm for finding a representative cohort.</em></p>
+                          <a href="https://arxiv.org/abs/2205.01157" class="btn btn-primary">Paper</a>
+                      </div>
+                  </div>
+                  </div>
+
+                  <!-- Privacy Tab -->
+                  <!-- <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+                    <p><a href="https://arxiv.org/abs/2308.10888">Unlocking Accuracy and Fairness in Differentially Private Image Classification</a>
+                      <br> L. Berrada*, S. De*, <b>JH Shen*</b>, J. Hayes, R. Stanforth, D. Stutz, P. Kohli, S.L. Smith, B. Balle 
+                      <br> Preprint 2023.
+                      <br> [<a href="https://montrealethics.ai/unlocking-accuracy-and-fairness-in-differentially-private-image-classification/"> blog post </a>]
+        
+                    <p><a href="https://arxiv.org/abs/2002.09745">Differentially Private Set Union</a><br> S. Gopi, P. Gulhane, J. Kulkarni, JH. Shen, M. Shokouhi, S. Yekhanin (&alpha;&beta;)<br> Journal of Privacy and Confidentiality (JPC) 2021. <br> 
+                    Previous version at <a href="https://proceedings.mlr.press/v119/gopi20a.html">ICML 2020</a>.
+                    <br> Contributed Talk at TPDP 2020. <br>
+                    [<a href="https://slideslive.com/38928271"> talk </a>]
+                    [<a href="https://github.com/heyyjudes/differentially-private-set-union"> code </a>]
+                    </p>
+                   
+                    <p><a href="https://proceedings.neurips.cc/paper/2021/hash/a3842ed7b3d0fe3ac263bcabd2999790-Abstract.html">Fast and Memory Efficient Differentially Private-SGD via JL Projections</a> 
+                      <br> Z. Bu, S. Gopi, J. Kulkarni, YT. Lee, JH. Shen, U. Tantipongpipat (&alpha;&beta;) 
+                      <br> Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021). 2021. <br>
+                    </p>
+            
+                    <p><a href="https://proceedings.mlr.press/v139/nori21a.html">Accuracy, Interpretability, and Differential Privacy via Explainable Boosting</a>
+                    <br> H. Nori, R. Caruana, Z. Bu, <b>JH. Shen</b>, J. Kulkarni. 
+                    <br> Thirty-fifth Conference on Neural Information Processing Systems (ICML 2021). 2021. <br>
+                    </p>
+                  </div> -->
+              </div>
             </div>
             </div>
           </div>
@@ -156,14 +361,14 @@
     </div>
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"> </script>
     <script src="js/jquery.cookie.js"> </script>
     <script src="js/ekko-lightbox.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
 
