@@ -37,33 +37,30 @@
       <div class="container-fluid">
         <div class="row row-offcanvas row-offcanvas-left"> 
         <!--   *** SIDEBAR ***-->
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="sidebar-content">
-                <ul class="sidebar-menu b"> 
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="research.html">Research</a></li> 
-                  <li><a href="hair.html">Hair</a></li>
-                  <li><a href="https://convexoptimist.substack.com/">Blog</a></li> 
-                </ul>
-                <p class="social">
-                    <a href="https://twitter.com/judyhshen" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="https://github.com/heyyjudes" data-animate-hover="pulse" class="external gplus"><i class="fa fa-github"></i></a>
-                    <br>
-                    <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google"></i></a>
-                    <a href="https://ca.linkedin.com/in/judyhanwenshen" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a>
-                </p>
+          <div class="col-md-2 col-lg-2 sidebar-offcanvas" id="sidebar">
+            <div class="sidebar-content">
+              <div class="d-md-none text-end mb-3">
+                <button type="button" class="btn-close" id="closeSidebar"></button>
               </div>
+              <ul class="sidebar-menu b"> 
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li> 
+                <li><a href="hair.html">Hair</a></li>
+                <li><a href="https://convexoptimist.substack.com/">Blog</a></li> 
+              </ul>
+              <p class="social">
+                  <a href="https://twitter.com/judyhshen" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://github.com/heyyjudes" data-animate-hover="pulse" class="external gplus"><i class="fa fa-github"></i></a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google"></i></a>
+                  <a href="https://ca.linkedin.com/in/judyhanwenshen" data-animate-hover="pulse" class="external gplus"><i class="fa fa-linkedin"></i></a>
+              </p>
             </div>
           </div>
         <!--   *** SIDEBAR END ***  -->
-        <div class="col-xs-12 col-sm-10 col-md-10 content-column white-background">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content-column white-background">
           <div class="small-navbar visible-xs">
-            <button type="button" class="btn btn-ghost pull-left" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+            <button type="button" class="btn btn-ghost pull-left" id="toggleSidebar">
               <i class="fa fa-align-left"></i>Menu
             </button>
           </div>

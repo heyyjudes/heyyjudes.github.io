@@ -39,14 +39,13 @@
   <body>
     <div id="all">
       <div class="container-fluid">
-        <!-- Offcanvas sidebar -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
+        <div class="row row-offcanvas row-offcanvas-left"> 
+          <!--   *** SIDEBAR ***-->
+          <div class="col-md-2 col-lg-2 sidebar-offcanvas" id="sidebar">
             <div class="sidebar-content">
+              <div class="d-md-none text-end mb-3">
+                <button type="button" class="btn-close" id="closeSidebar"></button>
+              </div>
               <ul class="sidebar-menu b"> 
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="research.html">Research</a></li> 
@@ -62,189 +61,189 @@
               </p>
             </div>
           </div>
-        </div>
+          <!--   *** SIDEBAR END ***  -->
 
-        <!-- Main content -->
-        <div class="col-xs-12 col-sm-10 col-md-10 content-column white-background">
-          <div class="small-navbar visible-xs">
-            <button type="button" class="btn btn-ghost pull-left" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-              <i class="fa fa-align-left"></i>Menu
-            </button>
-            <h1 class="small-navbar-heading"><a href="index.html">Creative</a></h1>
-          </div>
+          <!-- Main content -->
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content-column white-background">
+            <div class="small-navbar visible-xs">
+              <button type="button" class="btn btn-ghost pull-left" id="toggleSidebar">
+                <i class="fa fa-align-left"></i>Menu
+              </button>
+            </div>
 
-          <div class="row">
-            <center><h3>Research</h3></center>
-            <div class="content-column-content">
-              <p>See <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en"> Google Scholar </a> for most recent work</p>
-              
-              <p>(&alpha;&beta;) indicates author list in alphabetical order, (*) indicates equal contribution</p>
-              
-              <h5>2025</h5>
-              <p><a href="https://openreview.net/forum?id=FPJKZDzdsW">Formalizing Fairness with respect to Stereotype Predictors</a> 
-                <br> I. Navon, O. Reingold, <b>JH. Shen</b> (&alpha;&beta;) 
-                <br> Transactions on Machine Learning Research (TMLR) 2025. <br>
-                [<a href="https://drive.google.com/file/d/109Ud2KIQY0IW8pHAxMI4XRDRv7lfy_dP/view?usp=drive_link"> talk </a>]
-                [<a href="https://github.com/heyyjudes/formalizing-fairness-for-stereotypes"> code </a>]
-              </p>
-
-              <p><a href="https://arxiv.org/abs/2502.02861">Algorithms with Calibrated Machine Learning Predictions</a> 
-                <br> <b>JH. Shen</b>, E. Vitercik, A. Wikum (&alpha;&beta;) 
-                <br> International Conference on Machine Learning (ICML) 2025. <br>
-                <span style="color: #b38f2e;">ICML Spotlight 🎉 </span> <br>
-                [<a href="https://github.com/heyyjudes/algs-cali-pred"> code </a>]
-              </p>
-
-              <p><a href="https://arxiv.org/abs/2502.13221">Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations</a> 
-                <br> L. Cohen, C. Hong, J. Hsieh, <b>JH. Shen</b> (&alpha;&beta;) 
-                <br> International Conference on Machine Learning (ICML) 2025. <br>
-                [<a href="https://github.com/heyyjudes/llm-hiring-ecosystem"> code </a>]
-              </p>
-
-              <p><a href="https://arxiv.org/abs/2504.06549">Societal Impacts Research Requires Benchmarks for Creative Composition Tasks</a> 
-                <br> <b>JH. Shen</b>, C. Guestrin 
-                <br> International Conference on Machine Learning (ICML) 2025. 
-                <br><span style="color: #b38f2e;">BiAlign Workshop at ICLR 2025: Best Societal Impacts Paper Award 🎉</span> <br>
-                [<a href="https://huggingface.co/collections/heyyjudes/creative-composition-task-prompts-6834f528a28225bffb71628d"> data </a>]
-              </p>
-              
-              <h5>2024</h5>
-              <p><a href="https://www.arxiv.org/abs/2409.09603">Towards Data-Centric RLHF: Simple Metrics for Preference Dataset Comparison</a> 
-                <br><b>JH. Shen</b>, A. Sharma, J. Qin 
-                <br> Attrib Workshop @ Neurips 2024
-                </p>
-              
-              <p><a href="https://www.arxiv.org/abs/2408.04154">The Data Addition Dilemma</a> 
-                <br><b>JH. Shen</b>, ID. Raji, IY. Chen 
-                <br> Machine Learning For Health Care 2024 (MLHC)
-                </p>
-              
-              <p><a href="https://arxiv.org/abs/2305.13542">Multigroup Robustness</a> 
-                  <br> L. Hu, C. Peale, <b>JH. Shen</b> (&alpha;&beta;) 
-                  <br> 41st International Conference on Machine Learning (ICML 2024) <br>
-              </p>
-
-              <p><a href="https://arxiv.org/abs/2311.12233">Unifying Corroborative and Contributive Attributions in Large Language Models</a> 
-                <br> T. Worledge*, <b>JH. Shen*</b>, N. Meister, C. Winston, C. Guestrin 
-                <br> 2nd IEEE Conference on Secure and Trustworthy Machine Learning. 2024. 
-                <br> Contributed talk at NeurIPS ATTRIB Workshop. 2023. <br>
-                </p>
-
-              <p><a href="https://arxiv.org/abs/2307.07636">Dissenting Explanations: Leveraging Disagreement to Reduce Model Overreliance</a> 
-                <br> O. Reingold, <b>JH. Shen</b>, A. Talati (&alpha;&beta;) 
-                <br> 38th Annual Conference on Artificial Intelligence (AAAI). 2024. <br>
-              </p>
-
-
-              <h5>2023 </h5>
-              <p><a href="https://arxiv.org/abs/2308.10888">Unlocking Accuracy and Fairness in Differentially Private Image Classification</a>
-                <br> L. Berrada*, S. De*, <b>JH Shen*</b>, J. Hayes, R. Stanforth, D. Stutz, P. Kohli, S.L. Smith, B. Balle 
-                <br> Preprint 2023.
-                <br> [<a href="https://montrealethics.ai/unlocking-accuracy-and-fairness-in-differentially-private-image-classification/"> blog post </a>]
-
-              <p><a href="https://arxiv.org/abs/2305.13542">Bidding Strategies for Proportional Representation in Advertisement Campaigns</a> 
-                <br> IL. Navon, C. Peale, O. Reingold, <b>JH. Shen</b> (&alpha;&beta;) 
-                <br> 4th annual Symposium on Foundations of Responsible Computing (FORC). 2023. <br>
-                </p>
-              
-              <h5>2022 </h5>
-                <p><a href="https://arxiv.org/abs/2205.01157">Leximax Approximations and Representative Cohort Selection</a> 
-                    <br> M Henzinger, C Peale, O Reingold, <b>JH. Shen</b>  (&alpha;&beta;) 
-                  <br> 3rd annual Symposium on Foundations of Responsible Computing (FORC). 2022. <br>
-                </p>
-
-
-                <h5>2021 </h5>
-                <p><a href="https://proceedings.neurips.cc/paper/2021/hash/a3842ed7b3d0fe3ac263bcabd2999790-Abstract.html">Fast and Memory Efficient Differentially Private-SGD via JL Projections</a> 
-                  <br> Z. Bu, S. Gopi, J. Kulkarni, YT. Lee, <b>JH. Shen</b>, U. Tantipongpipat (&alpha;&beta;) 
-                  <br> Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021). 2021. <br>
-                </p>
-          
-                <p><a href="https://proceedings.mlr.press/v139/nori21a.html">Accuracy, Interpretability, and Differential Privacy via Explainable Boosting</a>
-                <br> H. Nori, R. Caruana, Z. Bu, <b>JH. Shen</b>, J. Kulkarni. 
-                <br> Thirty-fifth Conference on Neural Information Processing Systems (ICML 2021). 2021. <br>
-                </p>
-                         
+            <div class="row">
+              <center><h3>Research</h3></center>
+              <div class="content-column-content">
+                <p>See <a href="https://scholar.google.com/citations?user=LCjSZ3eS8pIC&hl=en"> Google Scholar </a> for most recent work</p>
                 
-
-                <p><a href="https://arxiv.org/abs/2002.09745">Differentially Private Set Union</a><br> S. Gopi, P. Gulhane, J. Kulkarni, JH. Shen, M. Shokouhi, S. Yekhanin (&alpha;&beta;)<br> Journal of Privacy and Confidentiality (JPC) 2021. <br> 
-                Previous version at <a href="https://proceedings.mlr.press/v119/gopi20a.html">ICML 2020</a>.
-                <br> Contributed Talk at TPDP 2020. <br>
-                [<a href="https://slideslive.com/38928271"> talk </a>]
-                [<a href="https://github.com/heyyjudes/differentially-private-set-union"> code </a>]
+                <p>(&alpha;&beta;) indicates author list in alphabetical order, (*) indicates equal contribution</p>
+                
+                <h5>2025</h5>
+                <p><a href="https://openreview.net/forum?id=FPJKZDzdsW">Formalizing Fairness with respect to Stereotype Predictors</a> 
+                  <br> I. Navon, O. Reingold, <b>JH. Shen</b> (&alpha;&beta;) 
+                  <br> Transactions on Machine Learning Research (TMLR) 2025. <br>
+                  [<a href="https://drive.google.com/file/d/109Ud2KIQY0IW8pHAxMI4XRDRv7lfy_dP/view?usp=drive_link"> talk </a>]
+                  [<a href="https://github.com/heyyjudes/formalizing-fairness-for-stereotypes"> code </a>]
                 </p>
 
-                <h5>2020 </h5>
-                <p><a href="https://arxiv.org/abs/2010.05848">Human-centric dialog training via offline reinforcement learning</a> 
-                  <br> N. Jaques*, <b>JH. Shen*</b>, A. Ghandeharioun, C. Ferguson, A. Lapedriza, N. Jones, S.S. Gu, R. Picard. 
-                  <br> Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020). 2020. 
-                  <br> Previous version: <a href="https://arxiv.org/abs/1907.00456">Way Off-Policy Batch Deep Reinforcement Learning of Implicit Human Preferences in Dialog</a>
-                  <br> Contributed talk at NeurIPS workshop on Conversational AI 2019.
-                  <br> [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
+                <p><a href="https://arxiv.org/abs/2502.02861">Algorithms with Calibrated Machine Learning Predictions</a> 
+                  <br> <b>JH. Shen</b>, E. Vitercik, A. Wikum (&alpha;&beta;) 
+                  <br> International Conference on Machine Learning (ICML) 2025. <br>
+                  <span style="color: #b38f2e;">ICML Spotlight 🎉 </span> <br>
+                  [<a href="https://github.com/heyyjudes/algs-cali-pred"> code </a>]
+                </p>
+
+                <p><a href="https://arxiv.org/abs/2502.13221">Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations</a> 
+                  <br> L. Cohen, C. Hong, J. Hsieh, <b>JH. Shen</b> (&alpha;&beta;) 
+                  <br> International Conference on Machine Learning (ICML) 2025. <br>
+                  [<a href="https://github.com/heyyjudes/llm-hiring-ecosystem"> code </a>]
+                </p>
+
+                <p><a href="https://arxiv.org/abs/2504.06549">Societal Impacts Research Requires Benchmarks for Creative Composition Tasks</a> 
+                  <br> <b>JH. Shen</b>, C. Guestrin 
+                  <br> International Conference on Machine Learning (ICML) 2025. 
+                  <br><span style="color: #b38f2e;">BiAlign Workshop at ICLR 2025: Best Societal Impacts Paper Award 🎉</span> <br>
+                  [<a href="https://huggingface.co/collections/heyyjudes/creative-composition-task-prompts-6834f528a28225bffb71628d"> data </a>]
+                </p>
+                
+                <h5>2024</h5>
+                <p><a href="https://www.arxiv.org/abs/2409.09603">Towards Data-Centric RLHF: Simple Metrics for Preference Dataset Comparison</a> 
+                  <br><b>JH. Shen</b>, A. Sharma, J. Qin 
+                  <br> Attrib Workshop @ Neurips 2024
+                  </p>
+                
+                <p><a href="https://www.arxiv.org/abs/2408.04154">The Data Addition Dilemma</a> 
+                  <br><b>JH. Shen</b>, ID. Raji, IY. Chen 
+                  <br> Machine Learning For Health Care 2024 (MLHC)
+                  </p>
+                
+                <p><a href="https://arxiv.org/abs/2305.13542">Multigroup Robustness</a> 
+                    <br> L. Hu, C. Peale, <b>JH. Shen</b> (&alpha;&beta;) 
+                    <br> 41st International Conference on Machine Learning (ICML 2024) <br>
+                </p>
+
+                <p><a href="https://arxiv.org/abs/2311.12233">Unifying Corroborative and Contributive Attributions in Large Language Models</a> 
+                  <br> T. Worledge*, <b>JH. Shen*</b>, N. Meister, C. Winston, C. Guestrin 
+                  <br> 2nd IEEE Conference on Secure and Trustworthy Machine Learning. 2024. 
+                  <br> Contributed talk at NeurIPS ATTRIB Workshop. 2023. <br>
+                  </p>
+
+                <p><a href="https://arxiv.org/abs/2307.07636">Dissenting Explanations: Leveraging Disagreement to Reduce Model Overreliance</a> 
+                  <br> O. Reingold, <b>JH. Shen</b>, A. Talati (&alpha;&beta;) 
+                  <br> 38th Annual Conference on Artificial Intelligence (AAAI). 2024. <br>
+                </p>
+
+
+                <h5>2023 </h5>
+                <p><a href="https://arxiv.org/abs/2308.10888">Unlocking Accuracy and Fairness in Differentially Private Image Classification</a>
+                  <br> L. Berrada*, S. De*, <b>JH Shen*</b>, J. Hayes, R. Stanforth, D. Stutz, P. Kohli, S.L. Smith, B. Balle 
+                  <br> Preprint 2023.
+                  <br> [<a href="https://montrealethics.ai/unlocking-accuracy-and-fairness-in-differentially-private-image-classification/"> blog post </a>]
+
+                <p><a href="https://arxiv.org/abs/2305.13542">Bidding Strategies for Proportional Representation in Advertisement Campaigns</a> 
+                  <br> IL. Navon, C. Peale, O. Reingold, <b>JH. Shen</b> (&alpha;&beta;) 
+                  <br> 4th annual Symposium on Foundations of Responsible Computing (FORC). 2023. <br>
+                  </p>
+                
+                <h5>2022 </h5>
+                  <p><a href="https://arxiv.org/abs/2205.01157">Leximax Approximations and Representative Cohort Selection</a> 
+                      <br> M Henzinger, C Peale, O Reingold, <b>JH. Shen</b>  (&alpha;&beta;) 
+                    <br> 3rd annual Symposium on Foundations of Responsible Computing (FORC). 2022. <br>
+                  </p>
+
+
+                  <h5>2021 </h5>
+                  <p><a href="https://proceedings.neurips.cc/paper/2021/hash/a3842ed7b3d0fe3ac263bcabd2999790-Abstract.html">Fast and Memory Efficient Differentially Private-SGD via JL Projections</a> 
+                    <br> Z. Bu, S. Gopi, J. Kulkarni, YT. Lee, <b>JH. Shen</b>, U. Tantipongpipat (&alpha;&beta;) 
+                    <br> Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021). 2021. <br>
+                  </p>
+            
+                  <p><a href="https://proceedings.mlr.press/v139/nori21a.html">Accuracy, Interpretability, and Differential Privacy via Explainable Boosting</a>
+                  <br> H. Nori, R. Caruana, Z. Bu, <b>JH. Shen</b>, J. Kulkarni. 
+                  <br> Thirty-fifth Conference on Neural Information Processing Systems (ICML 2021). 2021. <br>
+                  </p>
+                           
+                  
+
+                  <p><a href="https://arxiv.org/abs/2002.09745">Differentially Private Set Union</a><br> S. Gopi, P. Gulhane, J. Kulkarni, JH. Shen, M. Shokouhi, S. Yekhanin (&alpha;&beta;)<br> Journal of Privacy and Confidentiality (JPC) 2021. <br> 
+                  Previous version at <a href="https://proceedings.mlr.press/v119/gopi20a.html">ICML 2020</a>.
+                  <br> Contributed Talk at TPDP 2020. <br>
+                  [<a href="https://slideslive.com/38928271"> talk </a>]
+                  [<a href="https://github.com/heyyjudes/differentially-private-set-union"> code </a>]
+                  </p>
+
+                  <h5>2020 </h5>
+                  <p><a href="https://arxiv.org/abs/2010.05848">Human-centric dialog training via offline reinforcement learning</a> 
+                    <br> N. Jaques*, <b>JH. Shen*</b>, A. Ghandeharioun, C. Ferguson, A. Lapedriza, N. Jones, S.S. Gu, R. Picard. 
+                    <br> Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020). 2020. 
+                    <br> Previous version: <a href="https://arxiv.org/abs/1907.00456">Way Off-Policy Batch Deep Reinforcement Learning of Implicit Human Preferences in Dialog</a>
+                    <br> Contributed talk at NeurIPS workshop on Conversational AI 2019.
+                    <br> [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
+                    [<a href="https://github.com/natashamjaques/neural_chat"> code </a>]
+                    </p>
+
+                  <p><a href="https://arxiv.org/abs/1909.07547">Hierarchical reinforcement learning for open-domain dialog</a> 
+                    <br> A. Saleh, N. Jaques, A. Ghandeharioun, <b>JH. Shen</b>, R. Picard. 
+                    <br> The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020). 2020. <br>
+                    [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
+                    [<a href="https://github.com/natashamjaques/neural_chat/tree/master/HierarchicalRL"> code </a>]
+                    </p>
+
+                  <h5>2019 </h5>
+                  <p><a href="https://arxiv.org/pdf/1906.09308.pdf">Approximating Interactive Human Evaluation with Self-Play for Open-Domain Dialog Systems</a> 
+                  <br> A. Ghandeharioun*, <b>JH. Shen*</b>, N. Jaques*, C. Ferguson, N. Jones, A. Lapedriza, R. Picard. 
+                  <br> 33rd Conference on Neural Information Processing Systems (NeurIPS 2019). 2019. <br>
+                  [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
                   [<a href="https://github.com/natashamjaques/neural_chat"> code </a>]
                   </p>
-
-                <p><a href="https://arxiv.org/abs/1909.07547">Hierarchical reinforcement learning for open-domain dialog</a> 
-                  <br> A. Saleh, N. Jaques, A. Ghandeharioun, <b>JH. Shen</b>, R. Picard. 
-                  <br> The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020). 2020. <br>
-                  [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
-                  [<a href="https://github.com/natashamjaques/neural_chat/tree/master/HierarchicalRL"> code </a>]
+                  
+                  <p><a href="https://appinventor.mit.edu/papers/JessVBPublications/Popstar_Poet_Grinch_CTE2019.pdf">The Popstar, the Poet, and the Grinch: Relating Artificial Intelligence to the Computational Thinking Framework with Block-based Coding</a> 
+                    <br> J Van Brummelen, <b>JH Shen</b>, EW Patton.
+                    <br> Proceedings of International Conference on Computational Thinking Education. 2019. <br>
                   </p>
-
-                <h5>2019 </h5>
-                <p><a href="https://arxiv.org/pdf/1906.09308.pdf">Approximating Interactive Human Evaluation with Self-Play for Open-Domain Dialog Systems</a> 
-                <br> A. Ghandeharioun*, <b>JH. Shen*</b>, N. Jaques*, C. Ferguson, N. Jones, A. Lapedriza, R. Picard. 
-                <br> 33rd Conference on Neural Information Processing Systems (NeurIPS 2019). 2019. <br>
-                [<a href="https://affect.media.mit.edu/neural_chat/datasets/"> data </a>]
-                [<a href="https://github.com/natashamjaques/neural_chat"> code </a>]
-                </p>
-                
-                <p><a href="https://appinventor.mit.edu/papers/JessVBPublications/Popstar_Poet_Grinch_CTE2019.pdf">The Popstar, the Poet, and the Grinch: Relating Artificial Intelligence to the Computational Thinking Framework with Block-based Coding</a> 
-                  <br> J Van Brummelen, <b>JH Shen</b>, EW Patton.
-                  <br> Proceedings of International Conference on Computational Thinking Education. 2019. <br>
-                </p>
-                
-                
-                <p><a href="https://ieeexplore.ieee.org/abstract/document/8925466">Unintentional affective priming during labeling may bias labels</a> 
-                  <br><b>JH. Shen</b>, A. Lapedriza, R. Picard. 
-                  <br> 8th International Conference on Affective Computing and Intelligent Interaction (ACII). 2019. 
-                </p>
-                
-                <h5>2018 </h5>
-
-                <p><a href="http://www.fatml.org/media/documents/darling_or_babygirl_stylistic_bias.pdf">Darling or Babygirl? Investigating Stylistic Bias in Sentiment Analysis</a> 
-                  <br><b>JH. Shen*</b>, L. Fratamico*, I. Rahwan, A. M. Rush. 
-                  <br> 5th Workshop on Fairness, Accountability, and Transparency in Machine Learning. 2018. 
-                  <br><i>Contributed talk</i><br>
+                  
+                  
+                  <p><a href="https://ieeexplore.ieee.org/abstract/document/8925466">Unintentional affective priming during labeling may bias labels</a> 
+                    <br><b>JH. Shen</b>, A. Lapedriza, R. Picard. 
+                    <br> 8th International Conference on Affective Computing and Intelligent Interaction (ACII). 2019. 
                   </p>
+                  
+                  <h5>2018 </h5>
 
-                <p><a href="https://www.aclweb.org/anthology/K18-1029/">Comparing Models of Associative Meaning: An Empirical Investigation of Reference in Simple Language Games</a> 
-                  <br><b>JH. Shen*</b>, M. Hofer*, B. Felbo, R. Levy. 
-                  <br> Proceedings of the 22nd Conference on Computational Natural Language Learning (CoNLL 2018). 2018. 
-                  <br><i> Oral presentation </i> <br>
-                  [<a href="https://github.com/heyyjudes/codenames-language-game"> code + data </a>]
+                  <p><a href="http://www.fatml.org/media/documents/darling_or_babygirl_stylistic_bias.pdf">Darling or Babygirl? Investigating Stylistic Bias in Sentiment Analysis</a> 
+                    <br><b>JH. Shen*</b>, L. Fratamico*, I. Rahwan, A. M. Rush. 
+                    <br> 5th Workshop on Fairness, Accountability, and Transparency in Machine Learning. 2018. 
+                    <br><i>Contributed talk</i><br>
+                    </p>
+
+                  <p><a href="https://www.aclweb.org/anthology/K18-1029/">Comparing Models of Associative Meaning: An Empirical Investigation of Reference in Simple Language Games</a> 
+                    <br><b>JH. Shen*</b>, M. Hofer*, B. Felbo, R. Levy. 
+                    <br> Proceedings of the 22nd Conference on Computational Natural Language Learning (CoNLL 2018). 2018. 
+                    <br><i> Oral presentation </i> <br>
+                    [<a href="https://github.com/heyyjudes/codenames-language-game"> code + data </a>]
+                    </p>
+
+                  <p><a href="https://www.fatml.org/media/documents/turing_box.pdf"> TuringBox: An Experimental Platform for the Evaluation of AI Systems </a> 
+                    <br> Z. Epstein, B.H Payne, <b>JH. Shen</b>, CJ. Hong, B. Felbo, A. Dubey, M. Groh, N. Obradovich, M. Cebrian & I. Rahwan. 
+                    <br> 5th Workshop on Fairness, Accountability, and Transparency in Machine Learning. 2018. 
+                  <br>
+                  <i>Contributed talk</i>
                   </p>
-
-                <p><a href="https://www.fatml.org/media/documents/turing_box.pdf"> TuringBox: An Experimental Platform for the Evaluation of AI Systems </a> 
-                  <br> Z. Epstein, B.H Payne, <b>JH. Shen</b>, CJ. Hong, B. Felbo, A. Dubey, M. Groh, N. Obradovich, M. Cebrian & I. Rahwan. 
-                  <br> 5th Workshop on Fairness, Accountability, and Transparency in Machine Learning. 2018. 
-                <br>
-                <i>Contributed talk</i>
-                </p>
-                
-                <p><a href="https://arxiv.org/abs/1803.07233"> Closing the AI Knowledge Gap </a> 
-                  <br> Z. Epstein, B.H Payne, <b>JH. Shen</b>, A. Dubey, B. Felbo, M Groh, N. Obradovich, M. Cebrian & I. Rahwan 
-                  <br> Preprint. 2018. 
-                <br>
-                </p>
-                
-                <h5>2017 </h5>
-                <h5>Mental Health and NLP</h5>
-                <p><a href="http://www.aclweb.org/anthology/W17-3107">Detecting Anxiety through Reddit</a> 
-                  <br> <b>JH. Shen</b>. F. Rudzicz. 
-                  <br> Proceedings of the Fourth Workshop on Computational Linguistics and Clinical Psychology–-From Linguistic Signal to Clinical Reality. 2017. 
-                <br>
-                [<a href="https://github.com/heyyjudes/anxiety-on-reddit"> code </a>] [data: (available by request)] </p>
+                  
+                  <p><a href="https://arxiv.org/abs/1803.07233"> Closing the AI Knowledge Gap </a> 
+                    <br> Z. Epstein, B.H Payne, <b>JH. Shen</b>, A. Dubey, B. Felbo, M Groh, N. Obradovich, M. Cebrian & I. Rahwan 
+                    <br> Preprint. 2018. 
+                  <br>
+                  </p>
+                  
+                  <h5>2017 </h5>
+                  <h5>Mental Health and NLP</h5>
+                  <p><a href="http://www.aclweb.org/anthology/W17-3107">Detecting Anxiety through Reddit</a> 
+                    <br> <b>JH. Shen</b>. F. Rudzicz. 
+                    <br> Proceedings of the Fourth Workshop on Computational Linguistics and Clinical Psychology–-From Linguistic Signal to Clinical Reality. 2017. 
+                  <br>
+                  [<a href="https://github.com/heyyjudes/anxiety-on-reddit"> code </a>] [data: (available by request)] </p>
+              </div>
             </div>
           </div>
         </div>
