@@ -39,13 +39,18 @@ p.pad {
 }
 
 .headshot img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
 .bio {
   flex: 1;
   min-width: 300px;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0.05em;
+  line-height: normal;
+  font-weight: 200;
 }
 
 @media (max-width: 768px) {
@@ -198,4 +203,31 @@ p.pad {
 /* Hide any remaining carousel controls */
 .owl-controls {
     display: none !important;
+}
+
+p.social a {
+    width: auto !important;  /* Override the fixed width */
+    height: auto !important; /* Override the fixed height */
+    border-radius: 0 !important; /* Remove the circular shape */
+    border: none !important; /* Remove the border */
+    line-height: normal !important; /* Reset line height */
+    padding: 5px 10px; /* Add some padding for better spacing */
+    margin: 0 10px 10px 0;
+    color: #999999;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease-out;
+}
+
+p.social a:hover {
+    color: #c0b283;
+    background: none !important; /* Ensure no background on hover */
+    text-decoration: underline;
+}
+
+/* Remove the circular background and icon-specific styles */
+p.social a i {
+    display: none;
 }
